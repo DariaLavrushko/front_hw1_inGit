@@ -1,8 +1,10 @@
 import { combineReducers, createStore } from "redux";
 import sandwichReducer from "./SandwichReducer";
+import booksReduser from "./booksReduser";
 
 const store = createStore(combineReducers({
-    sandwich: sandwichReducer
+    sandwich: sandwichReducer,
+    books: booksReduser
 }));
 
 export default store;
